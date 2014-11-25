@@ -1,9 +1,0 @@
-@charset "utf-8";
-/* CSS Document */
-/* -----------------------------诊所医生注册注册第二步-----------------------------------------------------------------------------------------------------------------------------*/
-.zsyszce{width:298px; height:auto; float:left; display:inline; overflow:hidden; text-align:left; margin:30px auto 0px;}
-.zsyszce_a{width:298px; height:auto; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#000000; margin:0px auto;}
-.zsyszce_b{width:298px; height:auto; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000000;
- margin:5px auto 10px;}
-.zsyszce_c a{font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#0a5f84; text-decoration:underline;}
-.zsyszce_c a:hover,.zsyszce_c a:active,.zsyszce_c a:focus{font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#0a5f84; text-decoration:none;}
