@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:security="http://www.springframework.org/schema/security"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/security
+		http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+	<security:global-method-security secured-annotations="enabled">
+		<security:protect-pointcut access="ROLE_SIGN,ROLE_LAB,ROLE_PRACTICE" expression="execution(* com.upcera.ddx.service..*.*(..))"/>
+	</security:global-method-security>
+	
+	<bean id="loginUrlEntryPoint" class="com.upcera.ddx.security.LoginUrlEntryPoint"></bean>
+	<security:http entry-point-ref="loginUrlEntryPoint">
+		<!--
+		<security:form-login login-page="/jsp/login_lab/login_lab.jsp" default-target-url="/index.jsp"/>
+		<security:logout logout-success-url="/logOut.jsp"/>
+		-->
+		<security:intercept-url pattern="/labAction/**" access="ROLE_LAB"/>
+		<security:intercept-url pattern="/jsp/lab/**.jsp" access="ROLE_LAB"/>
+		<security:intercept-url pattern="/jsp/u_lab/**.jsp" access="ROLE_LAB"/>
+		
+		<security:intercept-url pattern="/practiceAction/main**" access="ROLE_PRACTICE"/>
+		<security:intercept-url pattern="/jsp/practice/**.jsp" access="ROLE_PRACTICE"/>
+		<security:intercept-url pattern="/jsp/u_practice/**.jsp" access="ROLE_PRACTICE"/>
+		
+		<!-- 登录过滤器 -->
+		<security:custom-filter before="FORM_LOGIN_FILTER" ref="labLoginFilter"/>
+		<security:custom-filter position="FORM_LOGIN_FILTER" ref="practiceLoginFilter"/>
+		<security:custom-filter after="FORM_LOGIN_FILTER" ref="labSigupLoginFilter"/>
+		
+		<!-- 注销过滤器 -->
+		<security:custom-filter before="LOGOUT_FILTER" ref="labLogoutFilter"/>
+		<security:custom-filter position="LOGOUT_FILTER" ref="practiceLogoutFilter"/>
+		
+		<security:session-management invalid-session-url="/userAction/login.do?error=sessionOut">
+			<security:concurrency-control max-sessions="1" error-if-maximum-exceeded="true"/>
+		</security:session-management>
+		<security:access-denied-handler error-page="/accessDenied.jsp"/>
+	</security:http>
+	
+	<security:authentication-manager alias="authenticationManager">
+		<security:authentication-provider>
+			<security:password-encoder ref="PasswordEncode"/>
+			<security:jdbc-user-service	
+			data-source-ref="dataSource" 
+			users-by-username-query="SELECT EMAIL AS USERNAME,PASSWORD,'1' AS ENABLED FROM DDX_USER WHERE EMAIL=?"
+			authorities-by-username-query="SELECT USERNAME,AUTHORITY FROM DDX_USER_AUTHORITIES WHERE USERNAME=?"/>
+		</security:authentication-provider>
+	</security:authentication-manager>
+	<!-- 技工间登录验证 -->
+		<bean id="labLoginFilter" class="org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter">
+           <property name="authenticationManager" ref="authenticationManager"/>
+           <property name="authenticationFailureHandler" ref="lab_failureHandler"/>
+           <property name="authenticationSuccessHandler" ref="lab_successHandler"/>
+           <property name="filterProcessesUrl" value="/lab_login"/>
+      	</bean>
+      	<bean id="lab_failureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+            <property name="defaultFailureUrl" value="/userAction/login.do" />
+       </bean>
+       <bean id="lab_successHandler" class="org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler">
+             <property name="alwaysUseDefaultTargetUrl" value="true"/>
+             <property name="defaultTargetUrl" value="/labAction/main.do"/>
+       </bean>
+       <!-- 技工间注册登录验证 -->
+		<bean id="labSigupLoginFilter" class="org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter">
+           <property name="authenticationManager" ref="authenticationManager"/>
+           <property name="authenticationFailureHandler" ref="sigup_failureHandler"/>
+           <property name="authenticationSuccessHandler" ref="sigup_successHandler"/>
+           <property name="filterProcessesUrl" value="/sigup_login"/>
+      	</bean>
+      	<bean id="sigup_failureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+            <property name="defaultFailureUrl" value="/userAction/login.do" />
+       </bean>
+       <bean id="sigup_successHandler" class="org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler">
+             <property name="alwaysUseDefaultTargetUrl" value="true"/>
+             <property name="defaultTargetUrl" value="/labAction/signupSuccess.do"/>
+       </bean>
+	<!-- 诊所登录验证 -->
+		<bean id="practiceLoginFilter" class="org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter">
+               <property name="authenticationManager" ref="authenticationManager"/>
+               <property name="authenticationFailureHandler" ref="practice_FailureHandler"/>
+               <property name="authenticationSuccessHandler" ref="practice_SuccessHandler"/>
+               <property name="filterProcessesUrl" value="/practice_login"/>
+        </bean>
+        <bean id="practice_FailureHandler"  class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+               <property name="defaultFailureUrl" value="/userAction/login.do" />
+        </bean>
+        <bean id="practice_SuccessHandler" class="org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler">
+                <property name="alwaysUseDefaultTargetUrl" value="true"/>
+                 <property name="defaultTargetUrl" value="/practiceAction/main.do"/>
+        </bean>
+        
+       <!-- 注销过滤器，完成技工间用户注销时的定向功能 -->
+		<bean id="labLogoutFilter"
+			class="org.springframework.security.web.authentication.logout.LogoutFilter">
+			<constructor-arg value="/userAction/login.do" />
+			<constructor-arg>
+				<list>
+					<bean
+						class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler" />
+				</list>
+			</constructor-arg>
+			<property name="filterProcessesUrl" value="/lab_logout" />
+		</bean>
+	<!-- 注销过滤器，完成诊所用户注销时的定向功能 -->
+	<bean id="practiceLogoutFilter"
+		class="org.springframework.security.web.authentication.logout.LogoutFilter">
+		<constructor-arg value="/userAction/login.do" />
+		<constructor-arg>
+			<list>
+				<bean
+					class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler" />
+			</list>
+		</constructor-arg>
+		<property name="filterProcessesUrl" value="/practice_logout" />
+	</bean>
+	<!-- 国际化-->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="messages_zh_CN"></property>
+	</bean>
+
+	<bean id="springSecurityFilterChain" class="org.springframework.security.web.FilterChainProxy">
+		<security:filter-chain-map path-type="ant">
+			<!--<security:filter-chain pattern="/ddx/**" filters="securityContextPersistentceFilterWithASCFalse,basicAuthenticationFilter,exceptionTranslationFilter,filterSecurityInterceptor"/>-->
+			<security:filter-chain pattern="/**" filters="securityContextPersistentceFilterWithASCFalse,formLoginFilter,basicAuthenticationFilter,exceptionTranslationFilter,filterSecurityInterception"/>
+		</security:filter-chain-map>
+	</bean>
+</beans>

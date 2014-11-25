@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/box.css"  rel="stylesheet" type="text/css"/>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".menu01 .first").click(function(){
+			$(this).find(".menu_s").toggle();
+			$(this).siblings().find(".menu_s").hide();
+		});   
+	});
+</script>
+</head>
+
+<body>
+	<ul class="menu01">
+    	<li class="first">Feng Han
+   	  <div class="menu_s">
+                <div class="menu_ss"><img src="images/menu_bg05.jpg" width="225" height="10" /></div>
+              <div class="menu_s1">
+                	<p class="sec"><a href="#">我的账户</a></p>
+                    <h1>切换到</h1>                    
+                    <p class="sec01"><a href="#">Han@Upcera Dental Lab</a></p>
+                    <p class="sec02"><a href="#">新增账号</a></p>
+                    <p class="sec03"><a href="#">注销</a></p>
+        </div>
+            <div class="menu_s2"><img src="images/menu_bg04.jpg" width="225" height="4" /></div>
+                </div>
+        </li>
+    </ul>
+</body>
+</html>

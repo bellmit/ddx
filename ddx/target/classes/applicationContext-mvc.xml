@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+	       http://www.springframework.org/schema/beans
+	       http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	       http://www.springframework.org/schema/tx
+	       http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+	       http://www.springframework.org/schema/aop
+	       http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+	       http://www.springframework.org/schema/context
+	       http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+	       
+    <context:component-scan base-package="com.upcera.ddx.action" /> 
+    <context:component-scan base-package="com.upcera.ddx.open.servlet" />
+     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+        <property name="prefix" value="/jsp/" />  
+        <property name="suffix" value=".jsp"></property>  
+    </bean>
+    <!-- 启动 Spring MVC 的注解功能，完成请求和注解 POJO 的映射 -->  
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">  
+        <property name="messageConverters">  
+            <list>  
+                <bean class="org.springframework.http.converter.StringHttpMessageConverter" />  
+            </list>  
+        </property>  
+    </bean> 
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" >  
+		<property name="order" value="0" />
+	</bean> 
+	
+	<bean id="exceptionResolver" class="com.upcera.ddx.common.exception.ExceptionHandler"/> 
+	
+ 	<bean id="baseCache" class="com.upcera.ddx.common.cache.impl.BaseCache">
+		<property name="message_CN_Map">
+			<ref local="lab_service_CN_map"/>
+		</property>
+		<property name="modelAndViewMappingMap">
+			<ref local="case_setting_url_mapping_map"/>
+		</property>
+		<property name="apiUrl">
+			<ref local="open_api_setting"/>
+		</property>
+		<property name="httpConfig">
+			<value>http://localhost:8080/</value>
+		</property>
+	</bean>
+	<bean id="sironaConnectCache" class="com.upcera.ddx.common.cache.impl.SironaConnectCache">
+		<property name="sironaConnectType">
+			<ref local="sironaConnectType"/>
+		</property>
+		<property name="sironaConnectDesign">
+			<ref local="sironaConnectDesign"/>
+		</property>
+		<property name="sironaConnectMaterial">
+			<ref local="sironaConnectMaterial"/>
+		</property>
+	</bean>
+	<bean id="procedureAttrCache" class="com.upcera.ddx.common.cache.impl.ProcedureAttrCache">
+		<property name="shadeValue">
+			<ref local="attributes_shade_value"/>
+		</property>
+		<property name="stumpShadeValue">
+			<ref local="attributes_stump_shade_value"/>
+		</property>
+		<property name="copingValue">
+			<ref local="attributes_coping_value"/>
+		</property>
+		<property name="ponticContoursValue">
+			<ref local="attributes_pontic_contours_value"/>
+		</property>
+		<property name="marginValue">
+			<ref local="attributes_margin_value"/>
+		</property>
+		<property name="rpdValue">
+			<ref local="attributes_prd_value"/>
+		</property>
+		<property name="contactsEmbrasuresValue">
+			<ref local="attributes_contacts_embrasures_value"/>
+		</property>
+		<property name="occlusalContactValue">
+			<ref local="attributes_occlusal_contact_value"/>
+		</property>
+		<property name="insufficientRoomValue">
+			<ref local="attributes_Insufficient_Room_value"/>
+		</property>
+		<property name="retentionValue">
+			<ref local="attributes_Retention_value"/>
+		</property>
+		<property name="marginPositionValue">
+			<ref local="attributes_argin_Position_value"/>
+		</property>
+		<property name="emergenceWidthValue">
+			<ref local="attributes_Emergence_Width_value"/>
+		</property>
+		<property name="stainingValue">
+			<ref local="attributes_Staining_value"/>
+		</property>
+		<property name="stainPlacementValue">
+			<ref local="attributes_Stain_Placement_value"/>
+		</property>
+		<property name="surfaceTextureValue">
+			<ref local="attributes_Surface_Texture_value"/>
+		</property>
+		<property name="surfaceFinishValue">
+			<ref local="attributes_Surface_Finish_value"/>
+		</property>
+		<property name="translucencyShadeValue">
+			<ref local="attributes_Translucency_Shade_value"/>
+		</property>
+		<property name="translucencyVolumeValue">
+			<ref local="attributes_Translucency_Volume_value"/>
+		</property>
+		<property name="idValue">
+			<ref local="attributes_id_value"/>
+		</property>
+		<property name="reinforcementsValue">
+			<ref local="attributes_Reinforcements_value"/>
+		</property>
+	</bean>
+	
+	<bean id="procedurePriceAttrCache" class="com.upcera.ddx.common.cache.impl.ProcedurePriceAttrCache">
+		<property name="teeth">
+			<ref local="add_procedures_price_attributes_Teeth"/>
+		</property>
+		<property name="coping">
+			<ref local="attributes_coping_value"/>
+		</property>
+		<property name="ponticContours">
+			<ref local="attributes_pontic_contours_value"/>
+		</property>
+		<property name="margin">
+			<ref local="attributes_margin_value"/>
+		</property>
+		<property name="rpd">
+			<ref local="attributes_prd_value"/>
+		</property>
+		<property name="contactsEmbrasures">
+			<ref local="attributes_contacts_embrasures_value"/>
+		</property>
+		<property name="occlusalContact">
+			<ref local="attributes_occlusal_contact_value"/>
+		</property>
+		<property name="insufficientRoom">
+			<ref local="attributes_Insufficient_Room_value"/>
+		</property>
+		<property name="retention">
+			<ref local="attributes_Retention_value"/>
+		</property>
+		<property name="marginPosition">
+			<ref local="attributes_argin_Position_value"/>
+		</property>
+		<property name="emergenceWidth">
+			<ref local="attributes_Emergence_Width_value"/>
+		</property>
+		<property name="staining">
+			<ref local="attributes_Staining_value"/>
+		</property>
+		<property name="stainPlacement">
+			<ref local="attributes_Stain_Placement_value"/>
+		</property>
+		<property name="surfaceTexture">
+			<ref local="attributes_Surface_Texture_value"/>
+		</property>
+		<property name="surfaceFinish">
+			<ref local="attributes_Surface_Finish_value"/>
+		</property>
+		<property name="translucencyShade">
+			<ref local="attributes_Translucency_Shade_value"/>
+		</property>
+		<property name="translucencyVolume">
+			<ref local="attributes_Translucency_Volume_value"/>
+		</property>
+		<property name="id">
+			<ref local="attributes_id_value"/>
+		</property>
+		<property name="reinforcements">
+			<ref local="attributes_Reinforcements_value"/>
+		</property>
+	</bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="1073741824" />
+	</bean>
+		
+	<!-- 发邮件 -->
+	<bean id="javaMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.upcera.com" />
+		<property name="username" value="liaoming@upcera.com" />
+		<property name="password" value="mt0.0123" />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.timeout">25000</prop>
+			</props>
+		</property>
+	</bean>
+ </beans>

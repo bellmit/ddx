@@ -1,0 +1,26 @@
+/* 代码整理：懒人之家 www.box_aboutddx.com */
+*{ margin:0; padding:0; list-style:none;}
+img{ border:none;}
+body { margin:0; padding:0; background:#f7f7f7; font-family: "宋体", "Arial Narrow"; font-size:12px;}
+
+
+.box_aboutddx{ width:620px; position:relative; margin:0 auto;}
+.box_aboutddx .btn{ position:absolute; width:50px; height:80px; top:400px; cursor:pointer;}
+.box_aboutddx .prev{ left:0;background:url(../images/prevBtn.jpg) no-repeat #ccc;}
+.box_aboutddx .next{ right:0; background:url(../images/nextBtn.jpg) no-repeat;}
+.box_aboutddx li{ float:left;}
+.box_aboutddx .cf li{ position: relative; color: #fff;}
+.box_aboutddx .cf li img{ width:620px; height:400px;}
+.box_aboutddx .cf a{ display: block; width: 620px; height: 400px; position: absolute;color: #fff;}
+.box_aboutddx .cf li span{ display: block;width: 640px; position: absolute; left: 0; bottom: 0;padding: 10px 20px;line-height: 22px;text-align:left; }
+.box_aboutddx .picBox{ height:400px ; position:relative; overflow:hidden;}
+.box_aboutddx .picBox ul{ height:400px; position:absolute;}
+.box_aboutddx .picBox li{ width:620px; height:400px;}
+.box_aboutddx .listBox{ width:520px;height:64px; margin:0 auto; position:relative; padding:6px 0 10px; overflow:hidden; background:#393e42}
+.box_aboutddx .listBox ul{ height:100px; position:absolute;}
+.box_aboutddx .listBox li{ width:130px; height:70px; cursor:pointer; position:relative;}
+.box_aboutddx .listBox li i{ display:none;}
+.box_aboutddx .listBox li a{ display: block; width:124px; height: 70px;}
+.box_aboutddx .listBox li img{ width:124px;height: 70px;}
+.box_aboutddx .listBox .on img{ width: 118px; height: 64px; border:3px solid #AEAEAE;}
+.box_aboutddx .listBox .on i{ display:block;}

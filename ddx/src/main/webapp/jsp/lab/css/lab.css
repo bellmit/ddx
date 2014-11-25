@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+/* -----------------------------Lab_index---------------------------------------------------------------------------------------------------------------------------------------*/
+.Lab{width:930px; height:auto; margin:10px auto 0px; overflow:hidden;}
+.Lab_a{width:930px; height:auto; text-align:left; margin:0px auto; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold; color:#000000;}
+.Lab_b{width:930px; height:auto; text-align:center; margin:0px auto; overflow:hidden;}
+.Lab_b_left{width:470px; height:auto; text-align:left; float:left; display:inline; overflow:hidden;}
+.Lab_b_left_a{width:450px; height:auto; overflow:hidden; margin:20px auto; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#1870b0;}
+.Lab_b_left_b{width:452px; height:auto; overflow:hidden; margin:20px auto;}
+.Lab_b_left_b_top{width:452px; height:4px; background-image:url(../images/Lab_13.jpg); background-repeat:no-repeat; overflow:hidden; }
+.Lab_b_left_b_middle{width:449px; height:auto; text-align:center; background-color:#fbfbfb; border-left:#cbcbcb solid 1px; border-right:#cbcbcb solid 1px; overflow:hidden;}
+.Lab_b_left_b_middle ul{width:426px; height:auto; margin-left:10px;}
+.Lab_b_left_b_middle ul li{width:210px; height:auto; margin:2.5px 1.5px; float:left; display:inline; overflow:hidden;}
+.Lab_b_left_b_middle_a{width:210px; height:auto; overflow:hidden;}
+.Lab_b_left_b_middle_a_top{width:208px; height:4px; background-image:url(../images/Lab_18.jpg); background-repeat:no-repeat; overflow:hidden; margin-bottom:}
+.Lab_b_left_b_middle_a_middle{width:207px; height:auto; padding:9.5px 0px 9.5px 0px; background-color:#ffffff; border-left:#cbcbcb solid 1px; border-right:#cbcbcb solid 1px; overflow:hidden;}
+.Lab_b_left_b_middle_a_middle_top{width:187px; height:auto; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; margin:0px auto 10px auto;}
+.Lab_b_left_b_middle_a_middle_bottom{width:187px; height:40px; overflow:hidden; line-height:40px; background:url(../images/Lab_38.jpg) no-repeat; padding:10px 0px 5px 0px; margin:0 auto}
+.Lab_b_left_b_middle_a_middle_bottom_left{width:139px; height:28px; overflow:hidden; margin-right:10px; line-height:28px; float:left; display:inline; overflow:hidden; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:30px; font-weight:bold; color:#000000;cursor:pointer;}
+.Lab_b_left_b_middle_a_middle_bottom_right{width:18px; height:18px; overflow:hidden; line-height:18px; float:left; display:inline; overflow:hidden; margin-top:5px; margin-bottom:5px;}
+.Lab_b_left_b_middle_a_middle_bottom_right a{width:18px; height:18px; background-image:url(../images/Lab_26.jpg);  display:block;}
+.Lab_b_left_b_middle_a_middle_bottom_right a:hover,.Lab_b_left_b_middle_a_middle_bottom_right a:active,.Lab_b_left_b_middle_a_middle_bottom_right a:focus{width:18px; height:18px; background-image:url(../images/Lab1_03.jpg);  display:block;}
+.Lab_b_left_b_middle_a_bottom{width:208px; height:4px; background-image:url(../images/Lab_29.jpg); background-repeat:no-repeat; overflow:hidden;}
+.Lab_b_left_b_bottom{width:450px; height:5px; background-image:url(../images/Lab_41.jpg); background-repeat:no-repeat; overflow:hidden;}
+.Lab_b_right{width:457px; height:auto; text-align:left; float:right; display:inline; overflow:hidden; margin-bottom:30px;}
+.Lab_b_right_top{width:456px; height:4px; background-image:url(../images/Lab_03.jpg); background-repeat:no-repeat; overflow:hidden;}
+.Lab_b_right_middle{width:455px; height:auto; background-color:#fbfbfb; border-left:#cbcbcb solid 1px; border-right:#cbcbcb solid 1px; overflow:hidden;}
+.Lab_b_right_middle_top{width:448px; height:30px; line-height:30px; background: url(../images/Lab20_06.jpg) no-repeat; text-align:left; padding-top:5px; margin-left:3px; overflow:hidden;}
+.Lab_b_right_middle_top a{width:80px; height:25px; line-height:25px; text-align:center; background-image: url(../images/Lab21_07.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none;}
+.Lab_b_right_middle_top a:hover,.Lab_b_right_middle_top a:active,.Lab_b_right_middle_top a:focus{width:80px; height:25px; line-height:25px; text-align:center; background-image:url(../images/Lab30_03.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#00aeef; text-decoration:none;}
+.Lab_b_right_middle_bottom{width:432px; height:auto; overflow:hidden; margin:20px 0px 0px 18px; text-align:left}
+.Lab_b_right_middle_bottom_a{width:432px; height:auto; overflow:hidden; margin:0px auto; text-align:left;}
+.Lab_b_right_middle_bottom_a_left{width:auto; height:auto; float:left; display:inline; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#000000;}
+.Lab_b_right_middle_bottom_a_right{width:auto; height:14px; float:right; display:inline; overflow:hidden; text-align:right;}
+.Lab_b_right_middle_bottom_a_righ a{width:16px; height:16px;}
+.Lab_b_right_middle_bottom_b{width:432px; height:auto; overflow:hidden; margin:20px auto; text-align:left;}
+.Lab_b_right_middle_bottom_b_left{width:auto; height:auto; float:left; display:inline; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; margin-right:30px;}
+.Lab_b_right_middle_bottom_b_right{width:auto; overflow:hidden; height:25px; float:left; display:inline; text-align:left;}
+.Lab_b_right_middle_bottom_b_right ul li{ display:block}
+.Lab_b_right_middle_bottom_b_right select{width:204px; height:30px; line-height:30px; padding-top:2px; padding-bottom:2px; border:#cbcbcb solid 1px; vertical-align:middle;}
+.Lab_b_right_middle_bottom_c{width:432px; height:400px; overflow:scroll; overflow-x:hidden; margin:20px auto; text-align:left;}
+.Lab_b_right_middle_bottom_c dl{width:432px; height:auto; overflow:hidden; margin:0px auto; text-align:left;}
+.Lab_b_right_middle_bottom_c dl dt{width:432px; height:auto; overflow:hidden; margin:10px auto; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.Lab_b_right_middle_bottom_c dl dd{width:410px; height:auto; overflow:hidden; margin:0px auto; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; margin-left:22px;}
+.Lab_b_right_middle_bottom_c_left{width:16px; height:16px; float:left; display:inline; overflow:hidden; margin-right:10px;}
+.Lab_b_right_middle_bottom_c_left img{width:16px; height:16px;}
+.Lab_b_right_middle_bottom_c_right{width:384px; height:auto; float:left; display:inline; overflow:hidden;}
+.Lab_b_right_middle_bottom_c_right a{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#005dab; text-decoration:underline;}
+.Lab_b_right_middle_bottom_c_right a:hover,.Lab_b_right_middle_bottom_c_right a:active,.Lab_b_right_middle_bottom_c_right a:focus{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#00aeef; text-decoration:none;}
+.Lab_b_right_middle_bottom_c i{width:348px; height:auto; margin-left:62px; text-align:left;}
+.Lab_b_right_middle_bottom_d{width:432px; height:26px; line-height:26px; overflow:hidden; text-align:left;}
+.Lab_b_right_middle_bottom_d ul{width:432px; height:26px; line-height:26px; overflow:hidden; text-align:left;}
+.Lab_b_right_middle_bottom_d ul li{float:right; display:inline; overflow:hidden; text-align:right; margin-left:20px;}
+.Lab_b_right_middle_bottom_d_a{width:86px; height:26px; line-height:26px; text-align:right;}
+.Lab_b_right_middle_bottom_d_a a{width:86px; height:26px; line-height:26px; background:url(../images/Lab_46.jpg) no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; text-align:center;}
+.Lab_b_right_middle_bottom_d_a a:hover,.Lab_b_right_middle_bottom_d_a a:active,.Lab_b_right_middle_bottom_d_a a:focus{width:86px; height:26px; line-height:26px; background-image:url(../images/Lab2_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; text-align:center;}
+.Lab_b_right_middle_bottom_d_b{width:84px; height:26px; line-height:26px; text-align:left;}
+.Lab_b_right_middle_bottom_d_b a{width:59px; height:26px; line-height:26px; background-image: url(../images/Lab_70_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:25px; text-align:left;}
+.Lab_b_right_middle_bottom_d_b a:hover,.Lab_b_right_middle_bottom_d_b a:active,.Lab_b_right_middle_bottom_d_b a:focus{width:59px; height:26px; line-height:26px; background-image: url(../images/Lab_71_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px; text-align:left;}
+.Lab_b_right_bottom{width:456px; height:4px; background-image:url(../images/Lab_49.jpg); background-repeat:no-repeat; overflow:hidden;}
+/* -----------------------------Lab_DDXDentalPractice------------------------------------------------------------------------------------------------------------------------------*/
+.Lab_DDXDentalPractice_a{width:78px; height:24px; line-height:24px; text-align:center;}
+.Lab_DDXDentalPractice_a a{width:78px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab51_03.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.Lab_DDXDentalPractice_a a:hover{width:78px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab51_03.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#00aeef;}
+.Lab_DDXDentalPractice_a a:active,.Lab_DDXDentalPractice_a a:focus{width:78px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab51h_03.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff;}
+.Lab_DDXDentalPractice_b{width:117px; height:24px; line-height:24px; text-align:center;}
+.Lab_DDXDentalPractice_b a{width:117px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab52_03.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.Lab_DDXDentalPractice_b a:hover{width:117px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab52_03.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#00aeef;}
+.Lab_DDXDentalPractice_b a:active,.Lab_DDXDentalPractice_b a:focus{width:117px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab52h_05.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff;}
+.Lab_DDXDentalPractice_c{width:91px; height:24px; line-height:24px; text-align:center;}
+.Lab_DDXDentalPractice_c a{width:91px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab53_05.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.Lab_DDXDentalPractice_c a:hover{width:91px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab53_05.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#00aeef;}
+.Lab_DDXDentalPractice_c a:active,.Lab_DDXDentalPractice_c a:focus{width:91px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab53h_03.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff;}
+.Lab_DDXDentalPractice_d{width:70px; height:24px; line-height:24px; text-align:center;}
+.Lab_DDXDentalPractice_d a{width:70px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab54_07.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.Lab_DDXDentalPractice_d a:hover{width:70px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab54_07.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#00aeef;}
+.Lab_DDXDentalPractice_d a:active,.Lab_DDXDentalPractice_d a:focus{width:70px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab4h_03.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff;}
+.Lab_DDXDentalPractice_e{width:94px; height:24px; line-height:24px; text-align:center;}
+.Lab_DDXDentalPractice_e a{width:94px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab55_09.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.Lab_DDXDentalPractice_e a:hover{width:94px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab55_09.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#00aeef;}
+.Lab_DDXDentalPractice_e a:active,.Lab_DDXDentalPractice_e a:focus{width:94px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab5h_03.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff;}
+/* -----------------------------Lab_DDXDentalPractice_Preferences---------------------------------------------------------------------------------------------------*/
+.DDXDentalPractice_Preferences{width:115px; height:33px; line-height:33px; text-align:left; overflow:hidden; background-image:url(../../u_lab/images/11_03.jpg); background-repeat:no-repeat;}
+.DDXDentalPractice_Preferences_left{width:95px; height:33px; line-height:33px; float:left; display:inline; overflow:hidden;  height:33px; line-height:33px;}
+.DDXDentalPractice_Preferences_left input{width:85px; height:25px; line-height:25px; border:#cbcbcb solid 1px; margin:2px 5px 4px;}
+.DDXDentalPractice_Preferences_right{width:20px; height:33px; line-height:33px; float:left; display:inline; overflow:hidden;}
+.DDXDentalPractice_Preferences_right_top{width:20px; height:16.5px; line-height:16.5px;}
+.DDXDentalPractice_Preferences_right_top a{width:8px; height:5px; line-height:5px; padding:5.75px 6px; display:block; text-decoration:none;}
+.DDXDentalPractice_Preferences_right_bottom{width:20px; height:16.5px; line-height:16.5px;}
+.DDXDentalPractice_Preferences_right_bottom a{width:8px; height:5px; line-height:5px; padding:5.75px 6px; display:block; text-decoration:none;}
+/* -----------------------------Lab_DDXDentalPractice_Contacts---------------------------------------------------------------------------------------------------*/
+.DDXDentalPractice_Contacts{width:700px; height:auto; overflow:hidden; text-align:left; margin:0px auto;}
+.DDXDentalPractice_Contacts table{width:700px; height:auto; overflow:hidden; text-align:left; margin:0px auto; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333;}
+.DDXDentalPractice_Contacts table tr{width:700px; height:auto; overflow:hidden; text-align:left; margin:0px auto;}
+.DDXDentalPractice_Contacts_a{width:100px; height:30px; line-height:30px;}
+.DDXDentalPractice_Contacts_a a{width:94px; height:30px; line-height:30px; background-image:url(../images/Lab60_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_Contacts_a a:hover,.DDXDentalPractice_Contacts_a a:active,.DDXDentalPractice_Contacts_a a:focus{width:94px; height:30px; line-height:30px; background-image:url(../images/Lab60h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_Contacts_b{width:169px; height:30px; line-height:30px; }
+.DDXDentalPractice_Contacts_b a{width:163px; height:30px; line-height:30px; background-image:url(../images/Lab61_04.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_Contacts_b a:hover,.DDXDentalPractice_Contacts_b a:active,.DDXDentalPractice_Contacts_b a:focus{width:163px; height:30px; line-height:30px; background-image:url(../images/Lab61h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_Contacts_c{width:248px; height:30px; line-height:30px;}
+.DDXDentalPractice_Contacts_c a{width:242px; height:30px; line-height:30px; background-image:url(../images/Lab62_05.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_Contacts_c a:hover,.DDXDentalPractice_Contacts_c a:active,.DDXDentalPractice_Contacts_c a:focus{width:242px; height:30px; line-height:30px; background-image:url(../images/Lab62h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_Contacts_d{width:183px; height:30px; line-height:30px;}
+.DDXDentalPractice_Contacts_d a{width:177px; height:30px; line-height:30px; background-image:url(../images/Lab63_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_Contacts_d a:hover,.DDXDentalPractice_Contacts_d a:active,.DDXDentalPractice_Contacts_d a:focus{width:177px; height:30px; line-height:30px; background-image:url(../images/Lab63h_06.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_Contacts table tr:hover{width:700px; height:auto; overflow:hidden; text-align:left; margin:0px auto; background-color:#f0f0f0;}
+.DDXDentalPractice_Contacts_e{width:700px; height:auto; overflow:hidden; text-align:left; margin:0px auto; background-color:#f0f0f0;}
+.DDXDentalPractice_Contacts_f a{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#005dab; text-decoration:underline; display:block;}
+.DDXDentalPractice_Contacts_f a:hover,.DDXDentalPractice_Contacts_f a:active,.DDXDentalPractice_Contacts_f a:focus{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#00aeef; text-decoration:none; display:block;}
+/* -----------------------------Lab_DDXDentalPractice_PriceList---------------------------------------------------------------------------------------------------*/
+.DDXDentalPractice_PriceList h2{ font-size:15px;}
+.DDXDentalPractice_PriceList{width:658px; height:auto; overflow:hidden; text-align:left; margin:0px auto;}
+.DDXDentalPractice_PriceList table{width:658px; height:auto; overflow:hidden; text-align:left; margin:0px auto; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333;}
+.DDXDentalPractice_PriceList table tr{width:658px; height:auto; overflow:hidden; text-align:left; margin:0px auto;}
+.DDXDentalPractice_PriceList_a{width:362px; height:48px; line-height:48px;}
+.DDXDentalPractice_PriceList_a a{width:356px; height:48px; line-height:48px; background-image:url(../images/Lab71_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_PriceList_a a:hover,.DDXDentalPractice_PriceList_a a:active,.DDXDentalPractice_PriceList_a a:focus{width:356px; height:48px; line-height:48px; background-image:url(../images/Lab71h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_PriceList_b{width:99px; height:48px; line-height:48px;}
+.DDXDentalPractice_PriceList_b a{width:93px; height:48px; line-height:48px; background-image:url(../images/Lab72_04.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_PriceList_b a:hover,.DDXDentalPractice_PriceList_b a:active,.DDXDentalPractice_PriceList_b a:focus{width:93px; height:48px; line-height:48px; background-image:url(../images/Lab72h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_PriceList_c{width:98px; height:48px; line-height:48px;}
+.DDXDentalPractice_PriceList_c a{width:92px; height:48px; line-height:48px; background-image:url(../images/Lab73_05.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_PriceList_c a:hover,.DDXDentalPractice_PriceList_c a:active,.DDXDentalPractice_PriceList_c a:focus{width:92px; height:48px; line-height:48px; background-image:url(../images/Lab73h_03.jpg); background-repeat:no-repeat; display:block;  font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_PriceList_d{width:99px; height:48px; line-height:48px;}
+.DDXDentalPractice_PriceList_d a{width:93px; height:48px; line-height:48px; background-image:url(../images/Lab74_04.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_PriceList_d a:hover,.DDXDentalPractice_PriceList_d a:active,.DDXDentalPractice_PriceList_d a:focus{width:93px; height:48px; line-height:48px; background-image:url(../images/Lab74h_06.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.DDXDentalPractice_PriceList table tr:hover{width:658px; height:auto; overflow:hidden; text-align:left; margin:0px auto; background-color:#f0f0f0;}
+.DDXDentalPractice_PriceList_e{width:658px; height:auto; overflow:hidden; text-align:left; margin:0px auto; background-color:#f0f0f0;}
+.DDXDentalPractice_PriceList_f{width:70px; height:28px; line-height:28px; text-align:left; margin:0px 0px 20px 598px; overflow:hidden;}
+.DDXDentalPractice_PriceList_f a{width:45px; height:28px; line-height:28px; background-image:url(../images/Lab76_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:25px;}
+.DDXDentalPractice_PriceList_f a:hover,.DDXDentalPractice_PriceList_f a:active,.DDXDentalPractice_PriceList_f a:focus{width:45px; height:28px; line-height:28px; background-image:url(../images/Lab76h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+/* -----------------------------Lab_#Details------------------------------------------------------------------------------------------*/
+.LabDetails{width:745px; height:auto; overflow:hidden; margin:0px auto; text-align:left;}
+.LabDetails_a{width:745px; height:28px; line-height:28px; overflow:hidden; margin:0px auto; text-align:left;}
+.LabDetails_a_left{width:auto; height:28px; line-height:28px; margin:0px auto; text-align:left; float:left; display:inline; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold; color:#000000;}
+.LabDetails_a_right{width:206px; height:28px; line-height:28px; margin:0 auto; text-align:right; float:right; display:inline; overflow:hidden;}
+
+.menu_bgrighttop01{ width:148px; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+.LabDetails_a_right ul{width:auto; height:28px; line-height:28px; text-align:left;}
+.LabDetails_a_right ul li{width:auto; text-align:left; display:inline; overflow:hidden;}
+.LabDetails_a_right_a{width:85px; height:28px;  line-height:28px; overflow:hidden; margin-right:20px;  float:left;}
+.LabDetails_a_right_a a{width:60px; height:28px; line-height:28px; background-image:url(../images/Lab81_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:25px;}
+.LabDetails_a_right_a a:hover,.LabDetails_a_right_a a:active,.LabDetails_a_right_a a:focus{width:60px; height:28px; line-height:28px; background-image:url(../images/Lab81h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+.LabDetails_a_right_b{width:101px; height:28px; line-height:28px; overflow:hidden;  float:right;}
+.LabDetails_a_right_b a{width:76px; height:28px; line-height:28px; background-image:url(../images/Lab82_05.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:25px;}
+.LabDetails_a_right_b a:hover,.LabDetails_a_right_b a:active{width:76px; height:28px; line-height:28px; background-image:url(../images/Lab82h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+.LabDetails_b{width:745px; height:auto; float:left; overflow:hidden; margin:20px auto auto 10px; text-align:left;}
+.LabDetails_b_left{width:350px; height:auto; padding-left:22.5px; float:left; display:inline; overflow:hidden; text-align:left;}
+.LabDetails_b_left dl{width:350px; height:auto; overflow:hidden; text-align:left;}
+.LabDetails_b_left dl dt{width:350px; height:auto; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-align:left;}
+.LabDetails_b_left dl dd{width:340px; height:auto; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; margin-left:10px; text-align:left;}
+.LabDetails_b_right{width:350px; height:auto; padding-left:22.5px; float:left; display:inline; overflow:hidden; text-align:left;}
+.LabDetails_b_right dl{width:350px; height:auto; overflow:hidden; text-align:left;}
+.LabDetails_b_right dl dt{width:350px; height:auto; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-align:left;}
+.LabDetails_b_right dl dd{width:340px; height:auto; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; margin-left:10px; text-align:left;}
+.LabDetails_b dt a{ margin-left:10px;}
+.LabDetails_b dd a{font-family:Arial, Helvetica, sans-serif; font-family:12px; color:#205380; text-decoration:underline;}
+.LabDetails_b dd a:hover,.LabDetails_b dd a:active,.LabDetails_b dd a:focus{font-family:Arial, Helvetica, sans-serif; font-family:12px; color:#00aeef; text-decoration:none;}
+.LabDetails_c{width:745px; height:28px; line-height:28px; overflow:hidden; margin:0px auto; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#000000;}
+#LabDetails_d{ margin:10px auto 20px;}
+.LabDetails_e{width:700px; height:auto; overflow:hidden; text-align:center; margin:0px auto 20px; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; color:#000000;}
+.LabDetails_f{width:700px; height:auto; overflow:hidden; text-align:left; margin:0px auto;}
+.LabDetails_f table{width:700px; height:auto; overflow:hidden; text-align:left; margin:0px auto; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333;}
+.LabDetails_f table tr{width:700px; height:auto; overflow:hidden; text-align:left; margin:0 auto;}
+.LabDetails_f h2{ font-size:15px;}
+.LabDetails_f_a{width:90px; height:29px; line-height:29px;}
+.LabDetails_f_a a{width:86px; height:29px; line-height:29px; background-image:url(../images/Lab86_24.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.LabDetails_f_a a:hover,.LabDetails_f_a a:active,.LabDetails_f_a a:focus{width:86px; height:29px; line-height:29px; background-image:url(../images/Lab86h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.LabDetails_f_b{width:501px; height:29px; line-height:29px;}
+.LabDetails_f_b a{width:495px; height:29px; line-height:29px; background-image:url(../images/Lab87_04.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.LabDetails_f_b a:hover,.LabDetails_f_b a:active,.LabDetails_f_b a:focus{width:495px; height:29px; line-height:29px; background-image:url(../images/Lab87h.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.LabDetails_f_c{width:109px; height:29px; line-height:29px; background-image:url(../images/Lab90_03.jpg); background-repeat:no-repeat;}
+.LabDetails_f_d td{ padding:5px 10px;}
+.LabDetails_f_d{ background-color:#ededed;}
+.LabDetails_f_h td{ padding:5px 10px;}
+.LabDetails_f_h{ background:none;}
+.LabDetails_f_e{width:68px; height:28px; line-height:28px;}
+.LabDetails_f_e_left{width:44px; height:28px; line-height:28px; float:left; display:inline; overflow:hidden;}
+.LabDetails_f_e_left a{width:44px; height:28px; line-height:28px; background-image:url(../images/Lab88h_03_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; text-align:center;}
+.LabDetails_f_e_left a:hover,.LabDetails_f_e_left a:active,.LabDetails_f_e_left a:focus{width:44px; height:28px; line-height:28px; background-image:url(../images/Lab88_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; text-align:center}
+.LabDetails_f_e_right{width:24px; height:28px; line-height:28px; float:left; display:inline; overflow:hidden;}
+.LabDetails_f_e_right a{width:24px; height:28px; line-height:28px; background-image:url(../images/Lab89h_04.jpg); background-repeat:no-repeat; display:block;}
+/*.LabDetails_f_e_right a:active,.LabDetails_f_e_right a:focus*/
+.LabDetails_f_e_right a:hover{width:24px; height:28px; line-height:28px; background-image:url(../images/Lab89_04_04.jpg); background-repeat:no-repeat; display:block;}
+.LabDetails_f_f{width:auto; height:auto; overflow:hidden; background-color:#ededed; text-align:left;}
+.LabDetails_f_f dl{width:auto; height:auto; overflow:hidden; text-align:left; padding:10px 20px;}
+.LabDetails_f_f dl dt{width:auto; height:auto; overflow:hidden; text-align:left; font-family:Tahoma, Geneva, sans-serif; font-size:12px; font-weight:bold; color:#000000;}
+.LabDetails_f_f dl dd{width:auto; height:auto; overflow:hidden; text-align:left; font-family:Tahoma, Geneva, sans-serif; font-size:12px; color:#333333; padding-left:10px;}
+.LabDetails_g{width:700px; height:auto; overflow:hidden; text-align:left; margin:20px auto 0px;}
+.LabDetails_g dl{width:700px; height:auto; overflow:hidden; text-align:left;}
+.LabDetails_g dl dt{width:700px; height:auto; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; color:#000000;}
+.LabDetails_g dl dd{width:680px; height:auto; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; padding-left:20px; margin-top:10px;}
+.LabDetails_g dl dd span{margin-right:10px;}
+/* -----------------------------Lab_#Details_Notes------------------------------------------------------------------------------------------*/
+.LabDetailsNotes{width:700px; height:auto; overflow:hidden; text-align:left; margin:0px auto 20px; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; color:#000000;}
+.LabDetailsNotes_a{width:675px; height:auto; overflow:hidden; text-align:left; margin:0px 0px 0px 25px;}
+.LabDetailsNotes_a ul{width:675px; height:auto; overflow:hidden; text-align:left; padding:0px; margin:0px;}
+.LabDetailsNotes_a ul li{width:675px; height:auto; overflow:hidden; float:left; display:inline; overflow:hidden; text-align:left;}
+.LabDetailsNotes_a_left{width:125px; height:auto; float:left; display:inline; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-align:left;}
+.LabDetailsNotes_a_right{width:550px; height:auto; float:left; display:inline; overflow:hidden; text-align:left;}
+.LabDetailsNotes_b{width:650px !important; height:auto; overflow:hidden; background-color:#eeeeee; border:#e1e1e1 solid 1px; padding:10px; font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:left; margin-top:10px;}
+/* -----------------------------Lab_#Details_ActivityLog------------------------------------------------------------------------------------------*/
+.LabDetailsActivityLog_a{width:700px; height:auto; float:left; display:inline; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#000000; margin:0px auto;}
+.LabDetailsActivityLog{width:675px; height:auto; overflow:hidden; margin:20px 0px 20px 25px; text-align:left;}
+.LabDetailsActivityLog dl{width:675px; height:auto; overflow:hidden; margin:0px auto; text-align:left;}
+.LabDetailsActivityLog dl dt{width:675px; height:auto; overflow:hidden; margin:10px auto; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.LabDetailsActivityLog dl dd{width:653px; height:auto; overflow:hidden; margin:0px auto; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; margin-left:22px;}
+.LabDetailsActivityLog_left{width:16px; height:16px; float:left; display:inline; overflow:hidden; margin-right:10px;}
+.LabDetailsActivityLog_left img{width:16px; height:16px;}
+.LabDetailsActivityLog_right{width:627px; height:auto; float:left; display:inline; overflow:hidden;}
+.LabDetailsActivityLog_right a{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#005dab; text-decoration:underline;}
+.LabDetailsActivityLog_right a:hover,.LabDetailsActivityLog_right a:active,.LabDetailsActivityLog_right a:focus{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#00aeef; text-decoration:none;}
+.LabDetailsActivityLog i{width:348px; height:auto; margin-left:62px; text-align:left;}
+/* -----------------------------Lab_Case Setting---------------------------------------------------------------------------------------------------*/
+.LabCaseSetting{width:800px; height:auto; overflow:hidden; text-align:left; margin:20px auto;}
+.LabCaseSetting_a{width:745px; height:24px; line-height:24px; overflow:hidden; text-align:left; margin:0px auto 20px; border-bottom:#e1e1e1 solid 1px;}
+.LabCaseSetting_a ul{width:745px; height:24px; line-height:24px; overflow:hidden; text-align:left; margin:0px auto;}
+.LabCaseSetting_a ul li{width:auto; height:24px; line-height:24px; overflow:hidden; text-align:left; margin-right:5px; float:left; display:inline; overflow:hidden;}
+.LabCaseSetting_a_a{width:85px; height:24px; line-height:24px; text-align:center;}
+.LabCaseSetting_a_a a{width:85px; height:24px; line-height:24px; text-align:center; background:url(../images/Lab100_03.jpg) no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.LabCaseSetting_a_a a:hover{width:85px; height:24px; line-height:24px; text-align:center; background:url(../images/Lab100_03.jpg) no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#00aeef;}
+.LabCaseSetting_a_a a:active,.LabCaseSetting_a_a a:focus{width:85px; height:24px; line-height:24px; text-align:center; background:url(../images/Lab100h_03.jpg) no-repeat; text-decoration:none; display:block; font-size:14px; font-weight:bold; color:#fff;}
+.LabCaseSetting_a_b{width:111px; height:24px; line-height:24px; text-align:center;}
+.LabCaseSetting_a_b a{width:111px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab101_05.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.LabCaseSetting_a_b a:hover{width:111px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab101_05.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#00aeef;}
+.LabCaseSetting_a_b a:active,.LabCaseSetting_a_b a:focus{width:111px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab101h_05.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff;}
+.LabCaseSetting_a_c{width:213px; height:24px; line-height:24px; text-align:center;}
+.LabCaseSetting_a_c a{width:213px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab102_07.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.LabCaseSetting_a_c a:hover{width:213px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab102_07.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#00aeef;}
+.LabCaseSetting_a_c a:active,.LabCaseSetting_a_c a:focus{width:213px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab2h_03.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff;}
+.LabCaseSetting_a_d{width:93px; height:24px; line-height:24px; text-align:center;}
+.LabCaseSetting_a_d a{width:93px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab103_09.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.LabCaseSetting_a_d a:hover{width:93px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab103_09.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#00aeef;}
+.LabCaseSetting_a_d a:active,.LabCaseSetting_a_d a:focus{width:93px; height:24px; line-height:24px; text-align:center; background-image:url(../images/Lab103h_03.jpg); background-repeat:no-repeat; text-decoration:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff;}
+.LabCaseSetting_b{width:745px; height:auto; line-height:25px; overflow:hidden; text-align:left; margin:0px auto 20px;  border-bottom:#e1e1e1 solid 1px;}
+.LabCaseSetting_b ul{width:745px; height:auto; line-height:30px; overflow:hidden; text-align:left; margin:0px; padding:0px 0px 20px 0px; }
+.LabCaseSetting_b ul li{width:auto; height:auto; line-height:30px; text-align:left; float:left; display:inline; overflow:hidden; margin-right:20px;}
+.LabCaseSetting_b a{font-family:Arial, Helvetica, sans-serif; font-size:14px; text-decoration:underline; display:block; color:#000000;}
+.LabCaseSetting_b a:hover,.LabCaseSetting_b a:active,.LabCaseSetting_b a:focus{font-family:Arial, Helvetica, sans-serif; font-size:14px; text-decoration:none; display:block; color:#00aeef;}
+/* -----------------------------Lab_Case Setting_Coupons---------------------------------------------------------------------------------------------------*/
+.LabCaseSettingCoupons_a{width:79px; height:28px; line-height:28px;}
+.LabCaseSettingCoupons_a a{width:54px; height:28px; line-height:28px; background-image:url(../images/Lab110h_07.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:25px;}
+.LabCaseSettingCoupons_a a:hover,.LabCaseSettingCoupons_b a:active,.LabCaseSettingCoupons_b a:active{width:54px; height:28px; line-height:28px; background-image:url(../images/Lab110_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+.LabCaseSettingCoupons_b{width:60px; height:28px; line-height:28px;}
+.LabCaseSettingCoupons_b a{width:35px; height:28px; line-height:28px; background-image:url(../../u_lab/images/u_lab30_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:25px;}
+.LabCaseSettingCoupons_b a:hover,.LabCaseSettingCoupons_b a:active,.LabCaseSettingCoupons_b a:active{width:35px; height:28px; line-height:28px; background-image:url(../../u_lab/images/u_lab31_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+/* -----------------------------Lab_Case Setting_General_Scheduling/Holidays---------------------------------------------------------------------------------------------------*/
+.General_SchedulingHolidays{width:721x; height:auto; margin:0px auto; overflow:hidden; text-align:left;}
+.General_SchedulingHolidays_top{width:700x; height:auto; margin:0px auto; overflow:hidden; text-align:left; background-color:#dcecf6; border-bottom:#000000 solid 1px; padding-left:10.5px; padding-right:10.5.px; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold;} 
+.General_SchedulingHolidays_middle{width:721x; height:auto; margin:0px auto; overflow:hidden; text-align:left;}
+.General_SchedulingHolidays_middle ol{width:721x; height:auto; margin:0px auto; overflow:hidden; text-align:left;}
+.General_SchedulingHolidays_middle ol li{width:700x; height:auto; margin:0px auto; overflow:hidden; text-align:left; float:left; display:inline; padding:5px 10.5px;}
+.General_SchedulingHolidays_middle ol li:hover{width:700x; height:auto; margin:0px auto; overflow:hidden; text-align:left; float:left; display:inline; background-color:#ededed; padding:5px 10.5px;}
+.General_SchedulingHolidays_middle_left{width:640px; height:auto;float:left; display:inline; overflow:hidden; margin-right:23px;}
+.General_SchedulingHolidays_middle_left a{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#005dc6; text-decoration:underline;}
+.General_SchedulingHolidays_middle_left a:hover,.General_SchedulingHolidays_middle_left a:active,.General_SchedulingHolidays_middle_left a:focus{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#00aeee; text-decoration:none;}
+.General_SchedulingHolidays_middle_right{width:37px; height:auto; float:left; display:inline; overflow:hidden; text-align:left;}
+.General_SchedulingHolidays_middle_right a{width:37px; height:26px; line-height:26px; background-image:url(../images/Lab121_03.jpg); background-repeat:no-repeat; display:block;}
+.General_SchedulingHolidays_middle_right a:hover,.General_SchedulingHolidays_middle_right a:active,.General_SchedulingHolidays_middle_right a:focus{width:37px; height:26px; line-height:26px; background-image:url(../images/Lab121h_03.jpg); background-repeat:no-repeat; display:block;}
+.General_SchedulingHolidays_bottom{width:700x; height:auto; margin:10px auto 0px;; overflow:hidden; text-align:right; padding-left:10.5px; padding-right:10.5.px; float:right;}
+.General_SchedulingHolidays_bottom a{width:37px; height:25px; line-height:25px; background-image:url(../images/Lab120_06.jpg); background-repeat:no-repeat; display:block;}
+.General_SchedulingHolidays_bottom a:hover,.General_SchedulingHolidays_bottom a:active,.General_SchedulingHolidays_bottom a:focus{width:37px; height:25px; line-height:25px; background-image:url(../images/Lab120h_03.jpg); background-repeat:no-repeat; display:block;}
+/* -----------------------------Lab_Case Setting_General_RemakeTypes---------------------------------------------------------------------------------------------------*/
+.General_RemakeTypes{width:68px; margin-left:675px;}
+/* -----------------------------Lab_Case Setting_General_Rx Terms-----------------------------------------------------------------------------------------------*/
+.GeneralRxTerms{width:745px; height:auto; overflow:hidden; text-align:left; margin:0px auto 20px;}
+.GeneralRxTerms_a{width:745px; height:auto; overflow:hidden; text-align:left; margin:0px auto 20px; border-bottom:#e1e1e1 solid 1px;}
+.GeneralRxTerms_a ul{width:745px; height:auto; overflow:hidden; text-align:left; margin:0px auto; padding:0px 0px 20px 0px; margin:0px;}
+.GeneralRxTerms_a ul li{width:745px; height:auto; overflow:hidden; text-align:left; margin:0px auto; padding:0px; margin:0px; float:left; display:inline; overflow:hidden;}
+.GeneralRxTerms_a ul li a{font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#005dab; text-decoration:underline;}
+.GeneralRxTerms_a ul li a:hover,.GeneralRxTerms_a ul li a:active,.GeneralRxTerms_a ul li a:focus{font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#00aeef; text-decoration:none;}
+.GeneralRxTerms_a ul li img{ margin-right:10px;}
+.GeneralRxTerms_b{width:745px; height:auto; line-height:25px; overflow:hidden; text-align:left; margin:0px auto 20px;  border-bottom:#e1e1e1 solid 1px;}
+.GeneralRxTerms_b ul{width:745px; height:auto; overflow:hidden; text-align:left; margin:0px; padding:0px;}
+.GeneralRxTerms_b ul li{width:745px; height:auto; overflow:hidden; text-align:left; margin:0px; padding:0px; float:left; display:inline; overflow:hidden;}
+.GeneralRxTerms_b ul li a{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; text-decoration:underline; margin-right:20px;}
+.GeneralRxTerms_b ul li a:hover,.GeneralRxTerms_b ul li a:active,.GeneralRxTerms_b ul li a:focus{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; text-decoration:none; margin-right:20px;}
+/* ----------------------------lab_DDXDentalPractice_CaseSetting_ProcedureCharacteristics_Materials_Edit------------------------------------------*/
+.Materials_Edit{width:721px; height:auto; margin-top:10px; overflow:hidden;}
+.Materials_Edit ol{width:721px; height:auto; overflow:hidden; margin:0px; padding:0px;}
+.Materials_Edit ol li{width:auto; height:auto; float:left; display:inline; overflow:hidden; margin-right:10px;}
+
+/* -----------------------------lab_DDXDentalPractice_CaseSetting_Procedures_LabProcedures_Edit_Attributes---------------------------------------------------------------------*/
+.Attributes{ font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#005dab; margin-top:10px;}
+/* -----------------------------lab_DDXDentalPractice_CaseSetting_Procedures_LabProcedures_Edit_Pricing---------------------------------------------------------------------*/
+.Pricing{width:171px; height:29px; line-height:29px; background-image:url(../images/Pricing.jpg); /*----background-repeat:no-repeat;----*/}
+/* -----------------------------lab_DDXDentalPractice_CaseSetting_Procedures_LabProcedures_Edit_zhankai---------------------------------------------------------------------*/
+.Edit_zhankai a{font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#005dab; text-decoration:none; margin-left:5px;}
+.Edit_zhankai a:hover,.Edit_zhankai a:active,.Edit_zhankai a:focus{font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#00aeef; text-decoration:underline; margin-left:5px;}
+.Edit_zhankai_a{width:676px; height:auto; overflow:hidden;}
+.Edit_zhankai_a dl{width:676px; height:auto; overflow:hidden; margin:0px; padding:0px;}
+.Edit_zhankai_a dt{ margin-bottom:10px;}
+.Edit_zhankai_a dd{ margin-left:20px;}
+.Edit_zhankai_a dd img{ margin-right:10px;}
+.Edit_zhankai_a table{width:676px; height:auto; overflow:hidden; margin:20px 0px 0px 0px; padding:0px;}
+.Edit_zhankai_b{width:315px; height:29px; line-height:29px; background-image:url(../images/Edit_zhankai.jpg); background-repeat:no-repeat;}
+.Edit_zhankai_c{ text-align:right; float:right; display:inline; overflow:hidden;}
+.Edit_zhankai_c a{width:37px; height:26px; line-height:26px; background-image:url(../images/Lab121_03.jpg); background-repeat:no-repeat; display:block;}
+.Edit_zhankai_c a:hover,.Edit_zhankai_c a:active,.Edit_zhankai_c a:focus{width:37px; height:26px; line-height:26px; background-image:url(../images/Lab121h_03.jpg); background-repeat:no-repeat; display:block;}
+
+.LabDetails_f_e_center{ 	height: 26px;    line-height: 26px;    margin: 20px 336px;    overflow: hidden;    text-align: left;   width: 73px;}
+
+
+

@@ -1,0 +1,115 @@
+/* -----------------------------诊所医生室会员中心首页------------------------------------------------------------------------------------------------------------------------------------*/
+.zsyshyzx{width:745px; height:auto; text-align:center; margin:0px auto; overflow:hidden;}
+.zsyshyzx ul{width:745px; height:auto; text-align:left; margin:0px auto 150px; overflow:hidden;}
+.zsyshyzx ul li{width:745px; height:auto; text-align:left; float:left; display:inline; overflow:hidden;}
+.zsyshyzx ul li ol{width:745px; height:auto; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#000000;}
+.zsyshyzx ul li ol li{width:auto; height:auto; overflow:hidden; float:left; display:inline; overflow:hidden; margin-right:20px;}
+
+.zsyshyzx_a{width:745px; height:auto; text-align:left; margin:0px auto 10px; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold; color:#000000;}
+.zsyshyzx_b{width:745px; height:auto; text-align:left; margin:10px auto 0px; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; color:#000000;}
+.zsyshyzx_c{width:745px; height:auto; text-align:left; margin:0px auto; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000;}
+.zsyshyzx_d{width:745px; height:auto; text-align:left; margin:0px auto; overflow:hidden;}
+.zsyshyzx_d img{ width:140px; height:95px;}
+.zsyshyzx_e a{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#0a5f84; text-decoration:underline;}
+.zsyshyzx_e a:hover,.zsyshyzx_e a:active,.zsyshyzx_e a:focus{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#0a5f84; text-decoration:none;}
+/* -----------------------------诊所医生室会员中心_Add Lab--------------------------------------------------------------------------------------------------------------------------*/
+.AddLab{ font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#000000;}
+.AddLab_a{width:204px; height:30px; line-height:30px; padding-top:2px; padding-bottom:2px; border:#cbcbcb solid 1px; vertical-align:middle;}
+.AddLab_b{width:100px; height:30px; line-height:30px; padding-top:2px; padding-bottom:2px; border:#cbcbcb solid 1px; vertical-align:middle;}
+.AddLab_c{width:200px; height:25px; line-height:25px; border:#cbcbcb solid 1px;}
+.AddLab_d{ margin-left:10px; margin-top:2px; margin-bottom:2px;}
+.AddLab_d a{width:38px; height:25px; line-height:25px; background-image:url(../../u_lab/images/u_lab_9.jpg); background-repeat:no-repeat; display:block;}
+.AddLab_d a:hover,.AddLab_d a:active,.AddLab_d a:focus{width:38px; height:25px; line-height:25px; background-image:url(../../u_lab/images/u_lab_03_03.jpg); background-repeat:no-repeat; display:block;}
+.AddLab_e{width:420px; height:50px; line-height:50px; text-align:left; margin:15px auto 15px 0px; overflow:hidden; background-image: url(../../login_lab/images/login6.jpg); background-repeat:no-repeat; padding-left:60px; padding-right:20px; padding-top:5px; padding-bottom:5px;font-family:Arial, Helvetica, sans-serif; font-size:14px;   color:#ffffff; font-weight:bold;}
+.AddLab_f{width:200px; height:25px; line-height:25px; border:#ff0000 solid 1px;}
+/* -----------------------------诊所医生室会员中心_practice_UpceraDentalLab-----------------------------------------------------------------------------------------*/
+.practice_UpceraDentalLab{width:610px; height:auto; margin:0px 0px 30px 0px; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:24px; font-weight:bold; color:#000000;}
+/* -----------------------------诊所医生室会员中心_practice_Finances_Overview-----------------------------------------------------------------------------------------*/
+.practice_FinancesOverview{width:66px; height:26px; line-height:26px;}
+.practice_FinancesOverview a{width:41px; height:26px; line-height:26px; background-image:url(../images/practice_FinancesOverview_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:25px;}
+.practice_FinancesOverview a:hover,.practice_FinancesOverview a:active,.practice_FinancesOverview a:focus{width:41px; height:26px; line-height:26px; background-image:url(../images/practice_FinancesOverviewh_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+/* -----------------------------诊所医生室会员中心_practice_Finances_Account Payment----------------------------------------------------------------------------------------*/
+.practice_FinancesAccountPayment{width:730px; height:auto; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; padding-left:15px;}
+/* -----------------------------诊所医生室会员中心_practice_Finances_Price List---------------------------------------------------------------------------------------*/
+.practice_FinancesPriceList{width:745px; height:auto; overflow:hidden; text-align:left; margin:0px auto;}
+.practice_FinancesPriceList table{width:745px; height:auto; overflow:hidden; text-align:left; margin:0px auto; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333;}
+.practice_FinancesPriceList table tr{width:745px; height:auto; overflow:hidden; text-align:left; margin:0px auto;}
+.practice_FinancesPriceList_a{width:409px; height:49px; line-height:49px;} 
+.practice_FinancesPriceList_a a{width:403px; height:49px; line-height:49px; background-image:url(../images/u_practice1_03_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.practice_FinancesPriceList_a a:hover,.practice_FinancesPriceList_a a:active,.practice_FinancesPriceList a:focus{width:403px; height:49px; line-height:49px; background-image:url(../images/u_practice1h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.practice_FinancesPriceList_b{width:112px; height:49px; line-height:49px;}
+.practice_FinancesPriceList_b a{width:106px; height:49px; line-height:49px; background-image:url(../images/u_practice2_04_04.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.practice_FinancesPriceList_b a:hover,.practice_FinancesPriceList_b a:active,.practice_FinancesPriceList_b a:focus{width:106px; height:49px; line-height:49px; background-image:url(../images/u_practice2h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.practice_FinancesPriceList_c{width:112px; height:49px; line-height:49px;}
+.practice_FinancesPriceList_c a{width:106px; height:49px; line-height:49px; background-image:url(../images/u_practice3_05_05.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.practice_FinancesPriceList_c a:hover,.practice_FinancesPriceList_c a:active,.practice_FinancesPriceList_c a:focus{width:106px; height:49px; line-height:49px; background-image:url(../images/u_practice3h_03.jpg); background-repeat:no-repeat; display:block;  font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.practice_FinancesPriceList_d a{width:112px; height:49px; line-height:49px;}
+.practice_FinancesPriceList_d a{width:106px; height:49px; line-height:49px; background-image:url(../images/u_practice4_04.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.practice_FinancesPriceList_d a:hover,.practice_FinancesPriceList_d a:active,.practice_FinancesPriceList_d a:focus{width:106px; height:49px; line-height:49px; background-image:url(../images/u_practice4h_06.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}}
+.practice_FinancesPriceList table tr:hover{width:658px; height:auto; overflow:hidden; text-align:left; margin:0px auto; background-color:#f0f0f0;}
+.practice_FinancesPriceList_e{width:745px; height:auto; overflow:hidden; text-align:left; margin:0px auto; background-color:#f0f0f0;}
+/* -----------------------------诊所医生室会员中心_practice_Cases_New Case List---------------------------------------------------------------------------------------*/
+.practice_CasesNewCase ol{width:445x; height:auto; overflow:hidden; margin:0px; padding:0px; text-align:left;}
+.practice_CasesNewCase ol li{width:auto; height:auto; overflow:hidden; margin:0px 10px 0px 0px; padding:0px; text-align:left;}
+.practice_CasesNewCase ol li a{font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#005dab; text-decoration:underline; display:block;}
+.practice_CasesNewCase ol li a:hover,.practice_CasesNewCase ol li a:active,.practice_CasesNewCase ol li a:focus{font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold;  color:#00aeef; text-decoration:none; display:block;}
+.practice_CasesNewCase_a{width:83px; height:27px; line-height:27px;}
+.practice_CasesNewCase_a a{width:58px; height:27px; line-height:27px; background-image:url(../images/practice_CasesNewCase1.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+.practice_CasesNewCase_a a:hover{width:58px; height:27px; line-height:27px; background-image:url(../images/practice_CasesNewCase1h.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+.practice_CasesNewCase_a a:active,.practice_CasesNewCase_a a:focus{width:58px; height:27px; line-height:27px; background-image:url(../images/practice_CasesNewCase1v.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:25px;}
+.practice_CasesNewCase_b{width:72px; height:27px; line-height:27px;}
+.practice_CasesNewCase_b a{width:47px; height:27px; line-height:27px; background-image:url(../images/practice_CasesNewCase2.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+.practice_CasesNewCase_b a:hover{width:47px; height:27px; line-height:27px; background-image:url(../images/practice_CasesNewCase2h.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+.practice_CasesNewCase_b a:active,.practice_CasesNewCase_b a:focus{width:47px; height:27px; line-height:27px; background-image:url(../images/practice_CasesNewCase2v.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:25px;}
+/* -----------------------------诊所医生室会员中心_practice_Cases_ListCases---------------------------------------------------------------------------------------*/
+.practice_CasesListCases a{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#005dab; text-decoration:underline; display:block;}
+.practice_CasesListCases a:hover,.practice_CasesListCases a:active,.practice_CasesListCases a:hover{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#00aeef; text-decoration:none; display:block;}
+/* -----------------------------诊所医生室会员中心practice_Cases_Pickup------------------------------------------------------------------------------------*/
+.practiceCasesPickup{width:745px; height:auto; overflow:hidden; text-align:left; margin:0px auto;}
+.practiceCasesPickup_a{width:745px; height:auto; text-align:left; margin:20px auto 10px; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; color:#005dab;}
+.practiceCasesPickup_b{width:500px; height:auto; text-align:center; margin:0px 225px 0px 0px; overflow:hidden;}
+.practiceCasesPickup_b_top{ width:500px; height:6px; background-image: url(../../login_lab/images/login_lab2.jpg); background-repeat:no-repeat; overflow:hidden;}
+.practiceCasesPickup_b_middle{width:476px; height:auto; padding:11px; background-color:#fbfbfb; border-left:#cbcbcb solid 1px; border-right:#cbcbcb solid 1px; overflow:hidden;}
+.practiceCasesPickup_b_middle_a{color:#ff0000; margin-left:5px;}
+.practiceCasesPickup_b_middle ul{width:476x; height:auto; margin:0px auto; overflow:hidden; text-align:left;}
+.practiceCasesPickup_b_middle ul li{width:476x; height:auto; float:left; display:inline; overflow:hidden; margin-bottom:10px; text-align:left;}
+.practiceCasesPickup_b_middle_b{width:200px; height:25px; line-height:25px; border:#cbcbcb solid 1px;}
+.practiceCasesPickup_b_middle_c{margin-left:10px; margin-top:2px; margin-bottom:2px;}
+.practiceCasesPickup_b_middle_c a{width:38px; height:25px; line-height:25px; background-image:
+url(../../u_lab/images/u_lab37_03.jpg); background-repeat:no-repeat; display:block;}
+.practiceCasesPickup_b_middle_c a:hover,.practiceCasesPickup_b_middle_c a:active,.practiceCasesPickup_b_middle_c a:focus{width:38px; height:25px; line-height:25px; background-image: url(../../u_lab/images/u_lab38_03.jpg); background-repeat:no-repeat; display:block;}
+.practiceCasesPickup_b_middle_d{margin-left:10px; margin-top:2px; margin-bottom:2px;}
+.practiceCasesPickup_b_middle_d a{width:38px; height:25px; line-height:25px; background-image:
+url(../images/practiceCasesPickup.jpg); background-repeat:no-repeat; display:block;}
+.practiceCasesPickup_b_middle_d a:hover,.practiceCasesPickup_b_middle_d a:active,.practiceCasesPickup_b_middle_d a:focus{width:38px; height:25px; line-height:25px; background-image: url(../images/practiceCasesPickuph.jpg); background-repeat:no-repeat; display:block;}
+.practiceCasesPickup_b_middle_left{width:180px; height:auto; margin-right:16px; float:left; display:inline; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000;}
+.practiceCasesPickup_b_middle_right{width:280px; height:auto; float:left; display:inline; overflow:hidden; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000;}
+.practiceCasesPickup_b_middle_right span{float:left; display:inline; overflow:hidden;}
+.practiceCasesPickup_b_bottom{width:500px; height:7px; background-image:url(../../login_lab/images/login_lab3.jpg); background-repeat:no-repeat; overflow:hidden;}
+.practiceCasesPickup_b_middle_e{width:92px; height:27px; line-height:27px;}
+.practiceCasesPickup_b_middle_e a{width:67px; height:27px; line-height:27px; background-image:
+url(../images/u_practice30_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:25px;}
+.practiceCasesPickup_b_middle_e a:hover,.practiceCasesPickup_b_middle_e a:active,.practiceCasesPickup_b_middle_e a:focus{width:67px; height:27px; line-height:27px; background-image: url(../images/u_practice30h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+.practiceCasesPickup_b_middle_f{width:105px; height:27px; line-height:27px;}
+.practiceCasesPickup_b_middle_f a{width:80px; height:27px; line-height:27px; background-image:
+url(../images/u_practice31_07.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:25px;}
+.practiceCasesPickup_b_middle_f a:hover,.practiceCasesPickup_b_middle_f a:active,.practiceCasesPickup_b_middle_f a:focus{width:80px; height:27px; line-height:27px; background-image: url(../images/u_practice31h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:25px;}
+/* -----------------------------诊所医生室会员中心practice__Add Lab_My Labs_admin----------------------------------------------------------*/
+.practiceAddLabMyLabsadmin_a{width:206px; height:30px; line-height:30px;}
+.practiceAddLabMyLabsadmin_a a{width:200px; height:30px; line-height:30px; background-image:url(../images/u_practice40_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.practiceAddLabMyLabsadmin_a a:hover,.practiceAddLabMyLabsadmin_a a:active,.practiceAddLabMyLabsadmin_a a:focus{width:200px; height:30px; line-height:30px; background-image:url(../images/u_practice40h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.practiceAddLabMyLabsadmin_b{width:105px; height:30px; line-height:30px;}
+.practiceAddLabMyLabsadmin_b a{width:99px; height:30px; line-height:30px; background-image:url(../images/u_practice41_04.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.practiceAddLabMyLabsadmin_b a:hover,.practiceAddLabMyLabsadmin_b a:active,.practiceAddLabMyLabsadmin_b a:focus{width:99px; height:30px; line-height:30px; background-image:url(../images/u_practice41h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.practiceAddLabMyLabsadmin_c{width:167px; height:30px; line-height:30px;}
+.practiceAddLabMyLabsadmin_c a{width:161px; height:30px; line-height:30px; background-image:url(../images/u_practice42_05.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.practiceAddLabMyLabsadmin_c a:hover,.practiceAddLabMyLabsadmin_c a:active,.practiceAddLabMyLabsadmin_c a:focus{width:161px; height:30px; line-height:30px; background-image:url(../images/u_practice42h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.practiceAddLabMyLabsadmin_d{width:218px; height:30px; line-height:30px;}
+.practiceAddLabMyLabsadmin_d a{width:212px; height:30px; line-height:30px; background-image:url(../images/u_practice43_06.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; padding-left:6px;}
+.practiceAddLabMyLabsadmin_d a:hover,.practiceAddLabMyLabsadmin_d a:active,.practiceAddLabMyLabsadmin_d a:focus{width:212px; height:30px; line-height:30px; background-image:url(../images/u_practice43h_03.jpg); background-repeat:no-repeat; display:block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; padding-left:6px;}
+.practiceAddLabMyLabsadmin_e{width:49px; height:30px; line-height:30px; background-image:url(../images/u_practice44_07.jpg); background-repeat:no-repeat;}
+.practiceAddLabMyLabsadmin_f{width:37px; height:25px;}
+.practiceAddLabMyLabsadmin_f a{width:37px; height:25px; line-height:25px; background-image:url(../../u_lab/images/PartnerLabsadmin6_11.jpg); background-repeat:no-repeat; display:block;}
+.practiceAddLabMyLabsadmin_f a:hover,.practiceAddLabMyLabsadmin_f a:active,.practiceAddLabMyLabsadmin_f a:focus{width:37px; height:25px; line-height:25px; background-image:url(../../u_lab/images/PartnerLabsadmin6h_03.jpg); background-repeat:no-repeat; display:block;}
+
+

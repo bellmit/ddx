@@ -1,0 +1,22 @@
+.flashload {
+	background-color: #000000;
+	filter: Alpha(Opacity = 60);
+	width: 210px;
+	display: block;
+	border-collapse: collapse;
+	position: absolute;
+	z-index: 1200;
+	left: 45%;
+	top: 45%;
+	right: 50%;
+	bottom: auto;
+	
+}
+
+.flashload td {
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-weight: bolder;
+	padding-top: 2px;
+	word-spacing: normal;
+}

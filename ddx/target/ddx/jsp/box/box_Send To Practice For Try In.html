@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>发送试戴案例给医生</title>
+<link href="css/box.css"  rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="css/tcal.css" />
+	<script type="text/javascript" src="js/tcal.js"></script> 
+<!--关闭层-->
+<script>
+function turnoff(obj){
+document.getElementById(obj).style.display="none";
+}
+</script>
+<!--点击展开关闭-->
+<script type="text/javascript">
+function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
+var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
+var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
+var openTip = oOpenTip || "";
+var shutTip = oShutTip || "";
+if(targetObj.style.display!="none"){
+   if(shutAble) return;
+   targetObj.style.display="none";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = shutTip; 
+   }
+} else {
+   targetObj.style.display="block";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = openTip; 
+   }
+}
+}
+</script>
+</head>
+<body>
+<div class="box_appointment" id="closef">
+<div class="box_top">
+<div class="box_relatedtopleft"></div>
+<div class="box_relatedtopcenter"></div>
+<div class="box_relatedtopright"></div>
+</div>
+<div class="box_center">
+<div class="box_appointment_biaoti">
+<div class="box_changepatient_biaotileft"><img src="images/box_leftbg.png" width="12" height="32" /></div>
+<div class="box_changepatient_biaoticenter">
+<span class="box_appointment_biaoti_left"></span>
+<a href="#" onclick="javascript:turnoff('closef')"><span class="box_appointment_biaoti_right"><img src="images/box_close.png" width="21" height="20" onmouseover="this.src='images/box_close01.png'" onmouseout="this.src='images/box_close.png'"/></span></a>
+</div>
+<div class="box_procedurepatient_biaotiright"><img src="images/box_rightbg.png" width="12" height="32" /></div>
+</div>
+<div class="box_clear"></div>
+<div class="box_appointment_center">
+<div class="box_send">
+<div class="box_sendtop">发送试戴案例给医生</div>
+<div>
+<span class="box_send02">说明书</span>
+<span class="box_send03">完成?</span>
+</div>
+<div class="box_clear"></div>
+<div class="box_send01"><span>全冠陶瓷 <a href="#" onclick="openShutManager(this,'box')">[+] </a></span>
+  <form id="form1" name="form1" method="post" action="">
+        <label>
+        <input type="checkbox" name="复选框组1" value="复选框" id="复选框组1_0" /></label>
+     </form>
+</div>
+<div id="box" style="display:none">
+<dl>
+<dt> 牙位 </dt>
+<dd>2, 8-9, 20, 28</dd>
+<dt> 着色 </dt>
+<dd>轻</dd>
+<dt> 染色配置 </dt>
+<dd>牙龈</dd>
+<dt> 表面结构 </dt>
+<dd>中等的</dd>
+<dt> 表面完工</dt>
+<dd>高亮</dd>
+<dt> 透明色 </dt>
+<dd>浅灰色</dd>
+<dt> 透度 </dt>
+<dd>中等的</dd>
+<dt> 接触面/牙齿缝隙</dt>
+<dd>点</dd>
+<dt>咬合接触</dt>
+<dd>无包衬</dd>
+<dt>空间不足</dt>
+<dd>金属咬合面</dd>
+<dt> 可摘局部义齿 </dt>
+<dd>精确外冠</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="box_appointment_centerright">
+<div class="box_appointment_centerright01"><a href="#">取 消</a></div>
+<div class="box_appointment_centerright02"><a href="#">保 存</a></div>
+</div>
+</div>
+<div class="box_bottom">
+<div class="box_relatedbottomleft"></div>
+<div class="box_relatedbottomcenter"></div>
+<div class="box_relatedbottomright"></div>
+</div>
+</div>
+</body>
+</html>
