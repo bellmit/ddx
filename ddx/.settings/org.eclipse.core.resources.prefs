@@ -1,4 +1,3 @@
-#Mon Nov 10 14:33:09 CST 2014
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
 encoding//src/main/java/cn/baozun/bh/manager/dao/base/hibernate/BaseHibernateDao.java=UTF-8
@@ -16,4 +15,5 @@ encoding//src/main/webapp/jsp/u_practice/u_practice_AddLab.jsp=UTF-8
 encoding//src/main/webapp/jsp/u_practice/u_practice_Cases_Pickup.jsp=UTF-8
 encoding//src/main/webapp/jsp/u_practice/u_practice_Finances_AccountPayment.jsp=UTF-8
 encoding//src/main/webapp/jsp/u_practice/u_practice_Finances_Overview.jsp=UTF-8
+encoding//src/test/java=UTF-8
 encoding/<project>=UTF-8

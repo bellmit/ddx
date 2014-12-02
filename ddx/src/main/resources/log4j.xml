@@ -17,7 +17,7 @@
 	</appender>
 
 	<appender name="appender-root-file" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="File" value="${webRoot}/logs/ddx-log" />
+		<param name="File" value="${webRoot}/logs/ddx-log.log" />
 		<param name="DatePattern" value="'_'yyyy-MM-dd'.log'" />
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%-5p %-d{dd/MM/yy HH:mm:ss,SSS} [%C{1}:%L] %m%n" />
