@@ -179,9 +179,11 @@ $(function(){
 	                            success: function (data, textStatus) {
 	                                var JSON = eval('(' + data + ')');
 	                                if (JSON.result != 'TRUE') {
-	                                    alert(JSON.failReasons);
+	                                	ShowFailTip(JSON.failReasons);
+	                                    //alert(JSON.failReasons);
 	                                } else {
-	                                    alert(JSON.info);
+	                                    //alert(JSON.info);
+	                                	ShowSuccessTip(JSON.info);
 	                                    window.location.reload();
 	                                }
 	                            },
@@ -253,13 +255,16 @@ $(function(){
 						data : {caseId:$('#caseId').val(),caseNote:content},type : "POST",async : true,cache : false,global : false,dataType : "html",
 						beforeSend : function(XMLHttpRequest) {
 							$("#data-loading-div").find(".msg").html('正在拼命的加载数据...').end().show();
+							$(".ui-dialog-buttonpane button:contains('提交')").button("disable");
 						},
 						success : function(data, textStatus) {
 							var JSON = eval('(' + data + ')');
 							if (JSON.flag != 'success') {
-								alert("提交失败");
+								ShowFailTip("提交失败")
+								//alert("提交失败");
 							} else {
-								alert("提交成功");
+								ShowSuccessTip("提交成功")
+								//alert("提交成功");
 								$("#case_note_dialog").dialog("destroy");
 								window.location.href=window.location.href;
 							}
@@ -311,10 +316,11 @@ $(function(){
 	                $(this).dialog("close");
 	            },
 	            "提交":function(){
-	            	if($('#labId').val()!=''){
+	            	if(undefined != $('#req-labId').val() && $('#req-labId').val()!=''){
 	            		document.forwardForm.submit();	            		
 	            	}else{
-	            		alert('请选择具体的技工间再试！');
+	            		ShowInfoTip("请选择具体的技工间再试！");
+	            		//alert('请选择具体的技工间再试！');
 	            	}
 	            }
 	        }
@@ -537,17 +543,21 @@ function sendDataForLab(url, params ,genre){
 			//对各种返回的处理
 			if(genre == 'cancel'){
 				if(flag == 'success'){
-					alert('取消成功！')
+					//alert('取消成功！')
+					ShowSuccessTip("取消成功！");
 					document.location.href = webContext + '/labAction/query.do?method=main';
 				}else{
-					alert('取消失败！');
+					//alert('取消失败！');
+					ShowFailTip("取消失败！");
 				}
 			}else if(genre == 'markTryIn'){
 				if(flag == 'success'){
-					alert('成功标记订单为试戴');
+					//alert('成功标记订单为试戴');
+					ShowSuccessTip("成功标记订单为试戴！");
 					window.location.reload();
 				}else{
-					alert('标记失败');
+					ShowFailTip("标记失败！");
+					//alert('标记失败');
 				}
 				
 			}else{
@@ -609,6 +619,7 @@ function lab_applyPatientAppointment(){
 				 var JSON = eval('(' + result + ')');
 				 var flag = JSON.flag;
 				 if(flag == 'success'){
+					 ShowSuccessTip("预约成功！");
 					 window.location.reload();			 
 				 }
 	});
@@ -648,6 +659,7 @@ function applyCaseArrive(){
 				 var JSON = eval('(' + result + ')');
 				 var flag = JSON.flag;
 				 if(flag == 'success'){
+					 ShowSuccessTip("操作成功！");
 					 window.location.reload();			 
 				 }
 	});
@@ -765,6 +777,7 @@ function updateOnHoldStatus(){
 		 params,
 		 function(result){
 		 if(result == 'success'){
+			 ShowSuccessTip("更新状态成功！");
 			 window.location.reload();    			 
 		 }
 	});
@@ -803,6 +816,7 @@ function applyCaseClose(){
 		 params,
 		 function(result){
 		 if(result == 'success'){
+			 ShowSuccessTip("成功关闭订单！");
 			 window.location.reload();    			 
 		 }
 	});
@@ -821,9 +835,11 @@ function deleteCaseProcedure(index,caseId){
 		success : function(data, textStatus) {
             var JSON = eval('(' + data + ')');
             if (JSON.result != 'TRUE') {
-                alert(JSON.failReasons);
+                //alert(JSON.failReasons);
+                ShowSuccessTip(JSON.failReasons);
             } else {
-                alert('删除成功');
+                //alert('删除成功');
+                ShowSuccessTip("删除成功！");
                 $("#"+index+"-tr-head").remove();
                 $("#"+index+"-tr").remove();
             }
@@ -946,13 +962,16 @@ function applyRescheduleCase(){
 			data : params,type : "POST",async : true,cache : false,global : false,dataType : "html",
 			beforeSend : function(XMLHttpRequest) {
 				$("#data-loading-div").find(".msg").html('正在拼命的加载数据...').end().show();
+				$(".ui-dialog-buttonpane button:contains('提交')").button("disable");
 			},
 			success : function(data, textStatus) {
 				var JSON = eval('(' + data + ')');
 				if (JSON.result != 'TRUE') {
-					alert(JSON.failReasons);
+					//alert(JSON.failReasons);
+					ShowFailTip(JSON.failReasons);
 				} else {
-					alert(JSON.info);
+					//alert(JSON.info);
+					ShowSuccessTip(JSON.info);
 					window.location.reload();
 				}
 			},

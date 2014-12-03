@@ -6,6 +6,8 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/tools/datePicker/WdatePicker.js"></script>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ddx.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/jquery-ui-1.10.4.min.css">
+<link href="${pageContext.request.contextPath}/js/tools/msgbox/msgbox.css"  rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/tools/msgbox/msgbox.js"></script>
 <!-- 全局进度条 -->
 <div id="data-loading-div" class="flashload" style="display: none;">
   <table>

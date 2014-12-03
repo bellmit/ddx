@@ -516,7 +516,7 @@ $(".General_middle_top li ").live("click",function(){
 		<span class="biaoti"></span><span class="u_lab_case_field_cuowu_a">请选择日期</span>
 		</div>
 		<div class="box_appointment04">
-		<span class="biaoti">时间 :<span class="biaocolor">*</span></span> <input id="patient_appointment_time" class="box_Time" type="text" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})" title="patient_appointment_time" maxlength="" name="patient_appointment_time">
+		<span class="biaoti">时间 :<span class="biaocolor">*</span></span> <input id="patient_appointment_time" class="box_Time" type="text" onfocus="WdatePicker({dateFmt:'HH:mm'})" title="patient_appointment_time" maxlength="" name="patient_appointment_time">
 		</div>
 		<div class="box_appointment04" style="display: none;" id="patient_appointment_time_info">
 		<span class="biaoti"></span><span class="u_lab_case_field_cuowu_a">请选择时间</span>
@@ -627,7 +627,7 @@ $(".General_middle_top li ").live("click",function(){
 技工间
 <span style="color: red;">*</span>
 </label>
-<select id="labId"  title="Choose a partner lab to send this case to" name="labId" aria-disabled="false">
+<select id="req-labId"  title="Choose a partner lab to send this case to" name="labId" aria-disabled="false">
 <option label="Select a Lab" value="">Select a Lab</option>
 <c:forEach items="${partnerLabList }" var="partnerLab">
 	<option value="${partnerLab.id }">${partnerLab.name }</option>

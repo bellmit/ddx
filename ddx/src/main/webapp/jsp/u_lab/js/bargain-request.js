@@ -51,9 +51,11 @@ function submitBargain(){
 			success : function(data, textStatus) {
 	            var JSON = eval('(' + data + ')');
 	            if (JSON.result != 'TRUE') {
-	                alert(JSON.failReasons);
+	                //alert(JSON.failReasons);
+	                ShowFailTip(JSON.failReasons);
 	            } else {
-	                alert('提交成功');
+	                //alert('提交成功');
+	                ShowSuccessTip('提交成功');
 	                window.location.reload();
 	            }
 			},
@@ -183,9 +185,11 @@ function submitBargainRequest(){
 		success : function(data, textStatus) {
 			var JSON = eval('(' + data + ')');
             if (JSON.result != 'TRUE') {
-                alert(JSON.failReasons);
+                //alert(JSON.failReasons);
+            	ShowFailTip(JSON.failReasons);
             } else {
-                alert(JSON.info);
+                //alert(JSON.info);
+                ShowFailTip(JSON.info);
                 $("#bargain_request_dialog").dialog("destroy");
             }
 		},
@@ -241,9 +245,11 @@ function editBargainRequest(){
 			success : function(data, textStatus) {
 				var JSON = eval('(' + data + ')');
 	            if (JSON.result != 'TRUE') {
-	                alert(JSON.failReasons);
+	                //alert(JSON.failReasons);
+	            	ShowFailTip(JSON.failReasons);
 	            } else {
-	                alert(JSON.info);
+	                //alert(JSON.info);
+	                ShowSuccessTip(JSON.info);
 	                window.location.href = webContext + '/labAction/query.do?method=bargainVerify';
 	            }
 			},

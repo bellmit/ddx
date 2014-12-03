@@ -72,7 +72,8 @@ function sendData(url, params ,genre){
 				
 			}else if(genre == 'addData'){
 				if(flag == 'success'){
-					alert('新增成功！');
+					ShowSuccessTip('新增成功！');
+					//alert('新增成功！');
 					//清空表单
 					$(':input','#caseForm').not(':button,:submit,:reset,:hidden').val('').removeAttr('checked')
 					var caseId = obj.caseId;
@@ -80,45 +81,49 @@ function sendData(url, params ,genre){
 					var patientId = obj.patientId;
 					window.location.href = webContext + '/casesAction/getDataById.do?caseId=' + caseId;
 				}else{
-					alert('新增失败！'+obj.msg);
+					//alert('新增失败！'+obj.msg);
+					ShowFailTip('新增失败！'+obj.msg);
 				}
 			}else if(genre == 'addCaseResume'){
 				if(flag == 'success'){
-					alert('草案转订单成功！');
+					ShowSuccessTip('草案转订单成功！');
+					//alert('草案转订单成功！');
 					var caseId = obj.caseId;
 					var labId = obj.labId;
 					var patientId = obj.patientId;
 					window.location.href = webContext + '/casesAction/getDataById.do?caseId=' + caseId;
 				}else{
-					alert('草案转订单失败！'+obj.msg);
+					ShowFailTip('草案转订单失败！'+obj.msg);
+					//alert('草案转订单失败！'+obj.msg);
 				}
 			}else if(genre == 'addCaseRemake'){
 				if(flag == 'success'){
-					alert('重制订单创建成功！');
+					ShowSuccessTip('重制订单创建成功！');
+					//alert('重制订单创建成功！');
 					var caseId = obj.caseId;
 					window.location.href = webContext + '/casesAction/getDataById.do?caseId=' + caseId;
 				}else{
-					alert('重制订单创建失败！'+obj.msg);
+					ShowFailTip('重制订单创建失败！'+obj.msg);
 				}
 			}else if(genre == 'addCaseOutsource'){
 				if(flag == 'success'){
-					alert('外包订单创建成功！');
+					ShowSuccessTip('外包订单创建成功！');
 					var caseId = obj.caseId;
 					window.location.href = webContext + '/casesAction/getDataById.do?caseId=' + caseId;
 				}else{
-					alert('外包订单创建失败！'+obj.msg);
+					ShowFailTip('外包订单创建失败！'+obj.msg);
 				}
 			}else if(genre == 'addCaseBasePatient'){
 				if(flag == 'success'){
-					alert('订单创建成功！');
+					ShowSuccessTip('订单创建成功！');
 					var caseId = obj.caseId;
 					window.location.href = webContext + '/casesAction/getDataById.do?caseId=' + caseId;
 				}else{
-					alert('订单创建失败！'+obj.msg);
+					ShowFailTip('订单创建失败！'+obj.msg);
 				}
 			}else if(genre == 'addDataAsDraft'){
 				if(flag == 'success'){
-					alert('保存草稿成功！');
+					ShowSuccessTip('保存草稿成功！');
 					var url = '';
 					if(obj.unitType == '2'){
 						url = '/practiceAction/main.do';
@@ -127,40 +132,41 @@ function sendData(url, params ,genre){
 					}
 					window.location.href = webContext + url;
 				}else{
-					alert('保存草稿失败！'+obj.msg);
+					ShowFailTip('保存草稿失败！'+obj.msg);
 				}
 			}else if(genre == 'applyLabEmail'){
 				if(flag == 'success'){
-					alert('更新技工间电子邮箱成功！');
+					ShowSuccessTip('更新技工间电子邮箱成功！');
 					document.casesDetailForm.submit();
 				}
 			}else if(genre == 'applyPatientAppointment'){
 				if(flag == 'success'){
-					alert('更新患者预约日期成功！');
+					ShowSuccessTip('更新患者预约日期成功！');
 					//window.location.reload();
 					document.casesDetailForm.submit();
 				}
 			}else if(genre == 'rescheduleSendDate'){
 				if(flag == 'success'){
-					alert('重排发送日期成功！')
+					ShowSuccessTip('重排发送日期成功！')
 					document.casesDetailForm.submit();
 				}
 			}
 			else if(genre == 'cancelCases'){
 				if(flag == 'success'){
-					alert('取消订单成功！');
+					ShowSuccessTip('取消订单成功！');
 				}else{
-					alert(obj.msg);
+					ShowFailTip(obj.msg);
 				}
 				var reqAccLabId = $('#reqAccLabId').val();
 				window.location.href = webContext + '/casesAction/overview.do?labId=' + reqAccLabId;
 			}else if(genre == 'confirmDeliveryDate'){
 				if(flag == 'success'){
-					alert(obj.info + '成功！');
+					ShowSuccessTip(obj.info + '成功！');
 					//变换图标
 				}
 			}else if(genre == 'applyCasesTags'){
 				if(flag == 'success'){
+					ShowSuccessTip('更新成功！');
 					$('#tags_div').hide();
 					$('#tags_value').text(obj.info);
 				}
@@ -178,6 +184,7 @@ function sendData(url, params ,genre){
 				}
 			}else if(genre == 'addNote'){
 				if(flag == 'success'){
+					ShowSuccessTip('备注添加成功！')
 					document.casesDetailForm.submit();
 				}
 			}
@@ -763,9 +770,9 @@ function addCaseProcedure(type,casesid,attr_div_id,procedure_index,procedureId){
 			success : function(data, textStatus) {
 				var JSON = eval('(' + data + ')');
 				if (JSON.result != 'TRUE') {
-					alert(JSON.failReasons);
+					ShowFailTip(JSON.failReasons);
 				} else {
-					alert(JSON.info);
+					ShowSuccessTip(JSON.info);
 					window.location.reload();
 				}
 			},
