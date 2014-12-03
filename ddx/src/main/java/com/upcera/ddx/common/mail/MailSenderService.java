@@ -25,5 +25,6 @@ public class MailSenderService {
 			mimeMessageHelper.addAttachment(AttachmentFile.getName(), AttachmentFile);
 		}
 		javaMailSender.send(mimeMessage);
+		javaMailSender.get
 	}
 }
