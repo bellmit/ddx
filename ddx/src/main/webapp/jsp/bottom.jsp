@@ -1,10 +1,13 @@
 <%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery/jquery-ui-1.10.4.min.js"></script>
+
 <div class="bottom">
 <div class="bottom_left">
 <ul>
 	<li><a href="javascript:showLabSignupTerms();">使用条款</a></li>
 	<li><a href="javascript:suggestions();">建议或意见</a></li>
-	<li><a href="javascript:;privacy();">隐私政策</a></li>
+	<li><a href="javascript:void(0);" onclick="privacy();">隐私政策</a></li>
 </ul>
 </div>
 <div class="bottom_right">

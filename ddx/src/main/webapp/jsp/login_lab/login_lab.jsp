@@ -76,6 +76,23 @@
                    <script type="text/javascript" src="${pageContext.request.contextPath}/jsp/login_lab/js/lrtk.js"></script>
                    <SCRIPT type=text/javascript src="${pageContext.request.contextPath}/jsp/login_lab/js//jquery-1.4.2.min.js"></SCRIPT>
                    <script type="text/javascript">
+	                   var InterValObj; //timer变量，控制时间  
+	                   var count = 11; //间隔函数，1秒执行
+	                   var curCount = count;
+	                   InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+	                   
+	                   //timer处理函数  
+	                   function SetRemainTime() {  
+	                       if (count == 0) {                  
+	                           window.clearInterval(InterValObj);//停止计时器  
+	                           $(".gg_fbtn").trigger('click');
+	                           count = curCount;
+	                       }  
+	                       else {  
+	                           count--;  
+	                       }  
+	                   }  
+                 
                         $(document).ready(function(){
                         $(".gg_fbtn").click(function(){	
                         $(this).find("a").toggleClass("open");

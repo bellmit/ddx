@@ -264,7 +264,8 @@ $(function(){
     	    	        );    	    		
     	    	}
     	    } else {
-    	    	alert('请选择具体的订单');
+    	    	ShowInfoTip('请选择具体的订单');
+    	    	//alert('请选择具体的订单');
     	    }
     	});
 

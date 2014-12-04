@@ -196,23 +196,23 @@ ZENG.msgbox._hide = function () {
 };
 
 function ShowInfoTip(msg) {
-    ZENG.msgbox.show(msg, 1, 3000);
+    ZENG.msgbox.show(msg, 1, 2000);
 }
 
 function ShowServerBusyTip(msg) {
-    ZENG.msgbox.show(msg, 1, 3000);
+    ZENG.msgbox.show(msg, 1, 2000);
 }
 
 function ShowSuccessTip(msg) {
-    ZENG.msgbox.show(msg, 4, 3000);
+    ZENG.msgbox.show(msg, 4, 2000);
 }
 
 function ShowFailTip(msg) {
-    ZENG.msgbox.show(msg, 5, 3000);
+    ZENG.msgbox.show(msg, 5, 2000);
 }
 
 function ShowLoadingTip(msg) {
-    ZENG.msgbox.show(msg, 6, 3000);
+    ZENG.msgbox.show(msg, 6, 2000);
 }
 
 
