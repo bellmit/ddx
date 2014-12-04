@@ -1875,14 +1875,13 @@ public class LabAction extends BaseAction {
 		DXObject.setValue(cf, request);
 		PageModel pm = new PageModel();
 		caseQuery.setLabId(getSessionUnitId());
-		if(null == cf.getStartDate()){
-			cf.setStartDate(ToolsKit.DateUtil.nowDate());
-		}else{
+		if(null == cf.getStartDate() && null == cf.getEndDate()){
+			cf.setEndDate(ToolsKit.DateUtil.getDayEnd(ToolsKit.DateUtil.nowDate()));
+		}
+		if(null != cf.getStartDate()){
 			cf.setStartDate(ToolsKit.DateUtil.getDayBegin(cf.getStartDate()));
 		}
-		if(null == cf.getEndDate()){
-			cf.setEndDate(ToolsKit.DateUtil.getLastMonthDayd());
-		}else{
+		if(null != cf.getEndDate()){
 			cf.setEndDate(ToolsKit.DateUtil.getDayEnd(cf.getEndDate()));
 		}
 		pm = casesService.queryCaseRemake(cf,caseQuery);

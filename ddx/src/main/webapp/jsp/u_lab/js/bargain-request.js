@@ -189,7 +189,7 @@ function submitBargainRequest(){
             	ShowFailTip(JSON.failReasons);
             } else {
                 //alert(JSON.info);
-                ShowFailTip(JSON.info);
+                ShowSuccessTip(JSON.info);
                 $("#bargain_request_dialog").dialog("destroy");
             }
 		},

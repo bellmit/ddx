@@ -653,10 +653,14 @@ public class CasesDaoImpl extends BaseHibernateDao<Cases, Integer> implements IC
 			params.put("labId", caseQuery.getLabId());
 		}
 		
-		hqlBuf.append(" and c.createDate >= :startDate");
-		params.put("startDate", cf.getStartDate());
-		hqlBuf.append(" and c.createDate <= :endDate");
-		params.put("endDate", cf.getEndDate());
+		if(null != cf.getStartDate()){
+			hqlBuf.append(" and c.createDate >= :startDate");
+			params.put("startDate", cf.getStartDate());
+		}
+		if(null != cf.getEndDate()){
+			hqlBuf.append(" and c.createDate <= :endDate");
+			params.put("endDate", cf.getEndDate());
+		}
 		
 		List<Cases> list = new ArrayList<Cases>();
 		List<Cases> labList = new ArrayList<Cases>();

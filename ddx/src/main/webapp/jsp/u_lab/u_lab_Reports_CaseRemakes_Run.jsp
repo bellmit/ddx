@@ -36,7 +36,20 @@
 <!--工厂实验室会员中心开始-->
 <div class="Parameters">
 <div class="Parameters_a">
-<div class="Parameters_a_left"><fmt:formatDate value="${startDate }" type="date" pattern="yyyy-MM-dd" /> 至 <fmt:formatDate value="${endDate }" type="date" pattern="yyyy-MM-dd" /> 的重制订单</div>
+<div class="Parameters_a_left">
+<c:if test="${!empty startDate and !empty endDate }">
+<fmt:formatDate value="${startDate }" type="date" pattern="yyyy-MM-dd" /> 
+至
+ <fmt:formatDate value="${endDate }" type="date" pattern="yyyy-MM-dd" />的重制订单
+</c:if>
+<c:if test="${!empty startDate and empty endDate }">
+<fmt:formatDate value="${startDate }" type="date" pattern="yyyy-MM-dd" />开始的重制订单
+</c:if>
+<c:if test="${empty startDate and !empty endDate }">
+<fmt:formatDate value="${endDate }" type="date" pattern="yyyy-MM-dd" />以前的重制订单
+</c:if>
+
+</div>
 <div class="Parameters_a_right"><a href="javascript:void(0)" onclick="$('.Parameters_b').slideToggle()">高级搜索</a></div>
 </div>
 <div class="Parameters_b" style="display: none;">
